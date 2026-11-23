@@ -1,0 +1,20 @@
+
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. EMPLOYEE.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+
+       01 WS-ID       PIC 9(4) VALUE 1001.
+       01 WS-NAME     PIC X(15) VALUE 'RAJ'.
+       01 WS-SALARY   PIC 9(6) VALUE 25000.
+
+       PROCEDURE DIVISION.
+           DISPLAY WS-ID.
+           DISPLAY WS-NAME.
+           DISPLAY WS-SALARY.
+
+           MOVE 30000 TO WS-SALARY.
+
+           DISPLAY WS-SALARY.
+           STOP RUN.
